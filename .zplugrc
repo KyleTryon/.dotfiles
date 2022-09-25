@@ -1,0 +1,24 @@
+# Load aliases
+source $HOME/.zplug/init.zsh
+
+# Add plugins
+zplug "plugins/git",  from:oh-my-zsh
+zplug "plugins/gh",  from:oh-my-zsh
+zplug "plugins/z",  from:oh-my-zsh
+zplug "plugins/command-not-found", from:oh-my-zsh
+zplug 'wfxr/forgit', use:forgit.plugin.zsh
+zplug "zsh-users/zsh-autosuggestions"
+zplug "zsh-users/zsh-history-substring-search"
+
+zplug 'zplug/zplug', hook-build:'zplug --self-manage'
+
+# Add Themes
+zplug "romkatv/powerlevel10k", as:theme, depth:1
+
+# Load plugins
+if ! zplug check; then
+    zplug install
+fi
+
+# Load zplug
+zplug load

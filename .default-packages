@@ -1,0 +1,4 @@
+# $NVM_DIR/default-packages
+prettier
+eslint
+typescript
