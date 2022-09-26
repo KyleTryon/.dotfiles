@@ -1,2 +1,2 @@
-DOTFILES_DIR=/home/@{PAM_USER}/.dotfiles
-ZPLUG_HOME=/home/@{PAM_USER}/.zplug
+DOTFILES_DIR      DEFAULT=/home/@{PAM_USER}/.dotfiles
+ZPLUG_HOME        DEFAULT=/home/@{PAM_USER}/.zplug
