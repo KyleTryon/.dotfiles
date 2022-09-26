@@ -1,5 +1,5 @@
 echo "Creating soft links for top-level dotfiles..."
-ln -s ./.gitocnfig ~/.gitconfig
+ln -s ./.gitconfig ~/.gitconfig
 ln -s ./.pam_environment ~/.pam_environment
 ln -s ./.zplugrc ~/.zplugrc
 ln -s ./.zshrc ~/.zshrc
