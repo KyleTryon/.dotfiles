@@ -1,2 +1,4 @@
 DOTFILES_DIR      DEFAULT=/home/@{PAM_USER}/.dotfiles
 ZPLUG_HOME        DEFAULT=/home/@{PAM_USER}/.zplug
+PATH              DEFAULT=/home/@{PAM_USER}/bin:/usr/local/bin:/bin\
+:/usr/bin:/usr/local/go/bin
