@@ -23,11 +23,11 @@ export HISTORY_IGNORE="(ls|bg|fg|pwd|exit|cd ..|cd -|pushd|popd)"
 
 
 # Load Zplug and plugins
-source "${DOTFILES_DIR}/.zplugrc"
+source "${HOME}/.zplugrc"
 
 # Load aliases
-source "${DOTFILES_DIR}/.aliases"
+source "${HOME}/.aliases"
 
 # Load NVM config
-source  "${DOTFILES_DIR}/.nvmconfig"
+source  "${HOME}/.nvmconfig"
 

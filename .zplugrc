@@ -1,5 +1,5 @@
 # Load aliases
-source $HOME/.zplug/init.zsh
+source "$HOME/.zplug/init.zsh"
 
 # Add plugins
 zplug "plugins/git",  from:oh-my-zsh
