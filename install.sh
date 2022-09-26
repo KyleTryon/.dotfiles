@@ -1,12 +1,12 @@
 echo "Creating soft links for top-level dotfiles..."
-ln -s ./.gitconfig ~/.gitconfig
-ln -s ./.pam_environment ~/.pam_environment
-ln -s ./.zplugrc ~/.zplugrc
-ln -s ./.zshrc ~/.zshrc
-ln -s ./.p10k.zsh ~/.p10k.zsh
-ln -s ./.default-packages ~/.nvm/default-packages
-nl -s ./.gitignore_global ~/.gitignore_global
+ln -s ${PWD}/.gitconfig         ${HOME}/.gitconfig
+ln -s ${PWD}/.pam_environment   ${HOME}/.pam_environment
+ln -s ${PWD}/.zplugrc           ${HOME}/.zplugrc
+ln -s ${PWD}/.zshrc             ${HOME}/.zshrc
+ln -s ${PWD}/.p10k.zsh          ${HOME}/.p10k.zsh
+ln -s ${PWD}/.default-packages  ${HOME}/.nvm/default-packages
+ln -s ${PWD}/.gitignore_global  ${HOME}/.gitignore_global
 echo
 echo "Soft links created."
 echo
-ls ~/ -lah | grep '\s\.'
+ls ${HOME} -lah | grep '\s\.'
