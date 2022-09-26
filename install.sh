@@ -1,5 +1,5 @@
 echo "Creating soft links for top-level dotfiles..."
-echo "Curren directory: $(pwd)"
+echo "Current directory: $(pwd)"
 set -x
 ln -s ${PWD}/.gitconfig         ${HOME}/.gitconfig
 ln -s ${PWD}/.pam_environment   ${HOME}/.pam_environment
