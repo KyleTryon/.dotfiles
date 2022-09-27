@@ -12,4 +12,4 @@ ln -s ${PWD}/.gitignore_global  ${HOME}/.gitignore_global
 echo
 echo "Soft links created."
 echo
-ls ${HOME} -lah | grep '\s\.'
+ls -ld .*
