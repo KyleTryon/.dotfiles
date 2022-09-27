@@ -25,13 +25,12 @@ setopt promptsubst
 # Ignore interactive commands from history
 export HISTORY_IGNORE="(ls|bg|fg|pwd|exit|cd ..|cd -|pushd|popd)"
 
-
 # Load Zplug and plugins
 source "${HOME}/.zplugrc"
 
 # Load aliases
-source "${HOME}/.aliases"
+source "${DOTFILES_DIR}/.aliases"
 
 # Load NVM config
-source  "${HOME}/.dotfiles/.nvmconfig"
+source  "${DOTFILES_DIR}/.nvmconfig"
 
