@@ -1,6 +1,10 @@
 # Set language
 export LANG=C.UTF-8
 
+DOTFILES_DIR=${$HOME/.dotfiles}
+ZPLUG_HOME=${$HOME/.zplug}
+PATH=${$HOME/bin:/usr/local/bin:/bin:/usr/bin:/usr/local/go/bin}
+
 # Path to your oh-my-zsh configuration.
 export ZSH=$HOME/.oh-my-zsh
 HYPHEN_INSENSITIVE="true"
