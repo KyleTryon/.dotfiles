@@ -29,5 +29,5 @@ source "${HOME}/.zplugrc"
 source "${HOME}/.aliases"
 
 # Load NVM config
-source  "${HOME}/.nvmconfig"
+source  "${HOME}/.dotfiles/.nvmconfig"
 
