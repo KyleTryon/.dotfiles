@@ -26,7 +26,7 @@ setopt promptsubst
 export HISTORY_IGNORE="(ls|bg|fg|pwd|exit|cd ..|cd -|pushd|popd)"
 
 # Load Zplug and plugins
-source "${HOME}/.zplugrc"
+source "${DOTFILES_DIR}/.zplugrc"
 
 # Load aliases
 source "${DOTFILES_DIR}/.aliases"

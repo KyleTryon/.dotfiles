@@ -6,9 +6,9 @@ zplug "plugins/git",  from:oh-my-zsh
 zplug "plugins/gh",  from:oh-my-zsh
 zplug "plugins/z",  from:oh-my-zsh
 zplug "plugins/command-not-found", from:oh-my-zsh
-zplug 'wfxr/forgit', use:forgit.plugin.zsh
-zplug "zsh-users/zsh-autosuggestions"
-zplug "zsh-users/zsh-history-substring-search"
+zplug 'wfxr/forgit', from:github
+zplug "zsh-users/zsh-autosuggestions", from:github
+zplug "zsh-users/zsh-history-substring-search", from:github
 
 zplug 'zplug/zplug', hook-build:'zplug --self-manage'
 
@@ -21,4 +21,4 @@ if ! zplug check; then
 fi
 
 # Load zplug
-zplug load
+zplug load --verbose
