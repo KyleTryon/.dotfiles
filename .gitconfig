@@ -4,8 +4,13 @@
 [core]
    autocrlf = true
 
-[url "git@github.com:"]
-  insteadOf = https://github.com/
+# Temporarily disabling, as it's causing issues with installing
+#   zplug in ansible
+# May in the future no longer use the install.sh and instead
+#  allow ansible to manage installing the dotfiles
+
+# [url "git@github.com:"]
+#   insteadOf = https://github.com/
 
 [fetch]
   prune = true
