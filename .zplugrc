@@ -1,4 +1,5 @@
 # Load aliases
+export ZPLUG_PROTOCOL="HTTPS"
 source "$HOME/.zplug/init.zsh"
 
 # Add plugins
