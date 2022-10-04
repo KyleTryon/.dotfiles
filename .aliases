@@ -9,17 +9,8 @@ if command -v nvim >/dev/null 2>&1; then
   alias vi='nvim'
 fi
 
-if command -v nvim >/dev/null 2>&1; then
-  alias ls='exa'
-else
-  alias ls='ls --color=auto'
-fi
-
-alias vi="nvim"
-alias vim="nvim"
-
 if command -v exa >/dev/null 2>&1; then
-  alias ls='exa'
+  alias ls='exa -lah'
 else
   alias ls='ls --color=auto'
 fi
