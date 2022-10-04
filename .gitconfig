@@ -14,3 +14,13 @@
 
 [fetch]
   prune = true
+
+[alias]
+  br   = "branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate"
+  cb   = "checkout -b"
+  co   = "checkout"
+  d    = "diff"
+  del  = "branch -D"
+  last = "log -1 HEAD --stat"
+  lg = "git log --graph --pretty=format:'%C(magenta)%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+  s    = "status -sb"
