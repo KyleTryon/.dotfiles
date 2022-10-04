@@ -48,7 +48,7 @@ plugins=(
 ## Ansible Magic Shellbook
 
 # Load theme
-source "${HOME}/.oh-my-zsh/custom/themes/powerlevel10k.zsh-theme" || echo "powerlevel10k not installed"
+source "${HOME}/.oh-my-zsh/custom/themes/powerlevel10k/powerlevel10k.zsh-theme" || echo "powerlevel10k not installed"
 
 # Load aliases
 source "${DOTFILES_DIR}/.aliases" || echo "aliases not installed"
