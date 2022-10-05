@@ -4,7 +4,6 @@ echo "Current directory: $(pwd)"
 mkdir -p ${HOME}/.nvm
 set -x
 ln -s ${PWD}/.gitconfig         ${HOME}/.gitconfig
-ln -s ${PWD}/.pam_environment   ${HOME}/.pam_environment
 ln -s ${PWD}/.zshrc             ${HOME}/.zshrc
 ln -s ${PWD}/.zshrc             ${HOME}/.profile
 ln -s ${PWD}/.p10k.zsh          ${HOME}/.p10k.zsh
