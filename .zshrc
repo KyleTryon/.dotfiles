@@ -47,7 +47,11 @@ plugins=(
 ## External plugins and themes are installed via 
 ## Ansible Magic Shellbook
 
+# Load Dir Colors
+test -r "${HOME}/.dir_colors" && eval $(dircolors ${HOME}/.dir_colors)
+
 # Load theme
+source "${HOME}/.p10k.zsh"
 source "${HOME}/.oh-my-zsh/custom/themes/powerlevel10k/powerlevel10k.zsh-theme" || echo "powerlevel10k not installed"
 
 # Load aliases
