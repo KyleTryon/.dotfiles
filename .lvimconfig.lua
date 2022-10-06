@@ -1,3 +1,4 @@
+-- This file is symlinked to lvim config directory via Ansible Magic Shellbook
 --[[
 lvim is the global options object
 
