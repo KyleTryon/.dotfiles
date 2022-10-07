@@ -2,7 +2,7 @@
 export LANG=C.UTF-8
 
 export DOTFILES_DIR="${HOME}/.dotfiles"
-export PATH="${HOME}/bin:/usr/local/bin:/bin:/usr/bin:/usr/local/go/bin"
+export PATH="${HOME}/bin:/usr/local/bin:/usr/bin:/usr/sbin:/sbin:/usr/local/go/bin"
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
