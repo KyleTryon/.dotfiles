@@ -54,6 +54,8 @@ test -r "${HOME}/.dir_colors" && eval $(dircolors ${HOME}/.dir_colors)
 source "${HOME}/.p10k.zsh"
 source "${HOME}/.oh-my-zsh/custom/themes/powerlevel10k/powerlevel10k.zsh-theme" || echo "powerlevel10k not installed"
 
+export BAT_THEME="Nord"
+
 # Load aliases
 source "${DOTFILES_DIR}/.aliases" || echo "aliases not installed"
 
