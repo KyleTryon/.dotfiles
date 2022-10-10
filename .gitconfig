@@ -1,9 +1,6 @@
 [init]
   defaultBranch = main
 
-[core]
-   autocrlf = true
-
 # Temporarily disabling, as it's causing issues with installing
 #   zplug in ansible
 # May in the future no longer use the install.sh and instead
