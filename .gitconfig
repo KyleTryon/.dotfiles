@@ -21,3 +21,6 @@
   last = "log -1 HEAD --stat"
   lg = "git log --graph --pretty=format:'%C(magenta)%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
   s    = "status -sb"
+[user]
+	email = git@techsquidtv.com
+	name = KyleTryon
