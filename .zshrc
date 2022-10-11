@@ -52,6 +52,8 @@ plugins=(
     zsh-syntax-highlighting
 )
 
+source "${ZSH}/oh-my-zsh.sh"
+
 ## External plugins and themes are installed via 
 ## Ansible Magic Shellbook
 
