@@ -11,6 +11,7 @@ If the location of the dotfiles is not the default `~/.dotfiles`, then update th
 ## How to customize
 1. Fork this repo
 2. Edit the files in the `dotfiles` directory
+  a. ⚠️ Ensure to modify the git config to your own name and email
 3. Update the `install.sh` script to copy the files to the correct location
 4. Use with `./install.sh` or [The Magic Shellbook](https://github.com/KyleTryon/Ansible-Magic-Shellbook)
 
