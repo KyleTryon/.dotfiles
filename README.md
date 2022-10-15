@@ -17,4 +17,4 @@ If the location of the dotfiles is not the default `~/.dotfiles`, then update th
 
 ## Why not use templates?
 Given that Ansible is being used, you may wonder why I didn't use Jinja2 templates directly in Ansible. While that is an option, by keeping the dotfiles in a separate repo and in a "live" state, if and when the dotfiles need to be updated, the changes can be made in production and then pushed back to the repo.
-This also makes the Ansible playbooks much simpler, as it ignores confguration.
+This also makes the Ansible playbooks much simpler, as it ignores configuration.
