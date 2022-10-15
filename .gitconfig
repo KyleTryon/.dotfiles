@@ -13,14 +13,20 @@
   prune = true
 
 [alias]
-  br   = "branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate"
+  br   = "forgit checkout_branch"
+  b    = "forgit checkout_branch"
   cb   = "checkout -b"
   co   = "checkout"
-  d    = "diff"
-  del  = "branch -D"
+  d    = "forgit branch_delete"
+  del  = "forgit branch_delete"
+  ga   = "forgit add"
+  gi   = "forgit ignore"
+  l    = "forgit log"
   last = "log -1 HEAD --stat"
-  lg = "git log --graph --pretty=format:'%C(magenta)%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
   s    = "status -sb"
 [user]
 	email = git@techsquidtv.com
 	name = KyleTryon
+[safe]
+	directory = /tmp/Ansible-Magic-Shellbook
+	directory = /home/techsquidtv/.oh-my-zsh/custom/plugins/forgit
