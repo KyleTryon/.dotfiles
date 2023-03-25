@@ -74,3 +74,6 @@ source "${DOTFILES_DIR}/.aliases" || echo "aliases not installed"
 
 # Load NVM config
 source  "${DOTFILES_DIR}/.nvmconfig" || echo "nvmconfig not installed"
+
+# Load Secrets
+source "${HOME}/.env" 2>/dev/null
