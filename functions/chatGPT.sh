@@ -15,5 +15,10 @@ chatGPT() {
   fi
   message=$(printf '%s' "$response" | jq -r '.choices[0].message.content')
   echo
+  if command -v highlight &> /dev/null ; then
+    message=$(printf '%s' "$message" | highlight --syntax=markdown --out-format=ansi)
+  else
+    echo "$message"
+  fi
   echo "$message"
 }
