@@ -2,7 +2,7 @@
 export LANG=C.UTF-8
 
 export DOTFILES_DIR="${HOME}/.dotfiles"
-export PATH="/bin:${HOME}/bin:/usr/local/bin:/usr/bin:/usr/sbin:/sbin:/usr/local/go/bin:${HOME}/go/bin:${HOME}/.cargo/bin:$FORGIT_INSTALL_DIR/bin"
+export PATH="/bin:${HOME}/bin:/usr/local/bin:/usr/bin:/usr/sbin:/sbin:/usr/local/go/bin:${HOME}/go/bin:${HOME}/.cargo/bin:$FORGIT_INSTALL_DIR/bin:${HOME}/.local/bin"
 # If on Windows with WSL2, enable additional paths
 IS_WSL=$(uname -a | grep -q WSL2; [[ $? == 1 ]]; echo $?)
 
