@@ -55,7 +55,9 @@ plugins=(
 source "${ZSH}/oh-my-zsh.sh"
 
 # Load functions
-find "${DOTFILES_DIR}/functions" -type f -name '*.sh' -exec source {} \;
+for f in "${DOTFILES_DIR}/functions"/*.sh; do
+  source "$f"
+done
 
 ## External plugins and themes are installed via 
 ## Ansible Magic Shellbook
