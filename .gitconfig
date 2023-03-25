@@ -30,3 +30,9 @@
 [safe]
 	directory = /tmp/Ansible-Magic-Shellbook
 	directory = /home/techsquidtv/.oh-my-zsh/custom/plugins/forgit
+[core]
+	editor = code --wait
+[url "ssh://git@github.com"]
+	insteadOf = https://github.com
+[gc]
+	auto = 0

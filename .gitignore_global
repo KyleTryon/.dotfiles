@@ -79,3 +79,5 @@ tags
 ## Persistent undo
 [._]*.un~
 
+# Secrets
+.env
