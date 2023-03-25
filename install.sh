@@ -14,4 +14,6 @@ ln -s ${PWD}/btop.conf          ${HOME}/.config/btop/btop.conf
 echo
 echo "Soft links created."
 echo
-ls -ld .*
+echo "Installing External ZSH plugins"
+git clone https://github.com/reegnz/jq-zsh-plugin.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/jq &> /dev/null || cd ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/jq && git pull &> /dev/null
+echo "complete!"
