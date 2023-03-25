@@ -45,6 +45,7 @@ plugins=(
     fd
     forgit
     gh
+    jq
     z
     zsh-autosuggestions
     zsh-history-substring-search
