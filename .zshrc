@@ -9,6 +9,11 @@ IS_WSL=$(uname -a | grep -q WSL2; [[ $? == 1 ]]; echo $?)
 if  [ $IS_WSL ]; then
   WINDOWS_USER=${WINDOWS_USER:-KyleT}
   PATH="${PATH}:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/rediles/NVIDIosoft VS Code/bin:/mnt/c/UIntel/Shared Libraries/redist/intel64/compiler:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/s/Sograms/Micmnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Co/Co.rvm/bin:/rporation/PhysX/Common:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/UsLocers/${WINDOWS_USER}/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/${WINDOWS_USER}/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/ctoo/Users/${WINDOWS_USER}/.dotnet/tools"
+  open() {
+    cd "$1" || return
+    explorer.exe .
+    cd - || return
+  }
 fi
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
