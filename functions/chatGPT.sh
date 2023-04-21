@@ -1,5 +1,18 @@
 #!/bin/bash
-
+# A CLI interface for ChatGPT, tuned to answer Linux-related questions
+# Usage: chatGPT [OPTION]... [INPUT]
+# Options:
+#   -f, --format FORMAT   Specify the output format
+#                         Default: markdown
+#                         Options:
+#                           markdown (m)
+#                           json (j)
+#                           term (t)
+#   -h, --help            Display this help message and return
+#
+# Example:
+#   chatGPT -f t "How do I install a package in Ubuntu?"
+#   chatGPT "How do I install a package in Ubuntu?"
 chatGPT() {
   # Function to display help message
   display_help() {

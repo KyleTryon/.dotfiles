@@ -1,4 +1,7 @@
 #!/bin/bash
+# An alternative to the 'git clone' command that automatically changes directory to the newly cloned repo
+# Usage: clone <repo_url>
+
 clone() {
   local url="$1"
 
