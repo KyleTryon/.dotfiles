@@ -57,6 +57,9 @@ plugins=(
     zsh-syntax-highlighting
 )
 
+bindkey '\t' end-of-line
+
+
 source "${ZSH}/oh-my-zsh.sh"
 
 # Load functions
